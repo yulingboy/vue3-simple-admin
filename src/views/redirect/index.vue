@@ -1,3 +1,6 @@
+<template>
+  <div class="redirect-container" />
+</template>
 <script lang="ts" setup>
 import { onMounted } from "vue"
 import { useRoute, useRouter } from "vue-router"

@@ -13,12 +13,10 @@ export default [
   },
   {
     path: "/",
-    redirect: {
-      name: "Home"
-    },
+    redirect: "/home",
     component: Layout,
     meta: {
-      title: "首页",
+      title: "",
       icon: "home"
     },
     children: [
@@ -36,9 +34,7 @@ export default [
   },
   {
     path: "/redirect",
-    redirect: {
-      name: "RedirectTo"
-    },
+    redirect: "/redirect-to",
     component: Layout,
     children: [
       {

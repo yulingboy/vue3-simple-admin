@@ -4,7 +4,7 @@
       <div class="login-form">
         <div class="login-header">
           <div class="logo">
-            <label>{{ APP_NAME }}</label>
+            <label>{{ APP_TITLE }}</label>
           </div>
         </div>
         <div class="form-container">
@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
 import loginForm from "./components/loginForm.vue"
-import { APP_NAME } from "@/config/constants"
+const APP_TITLE = import.meta.env.VITE_APP_TITLE
 </script>
 
 <style scoped>

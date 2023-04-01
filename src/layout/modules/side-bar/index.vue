@@ -34,7 +34,6 @@ const activeMenu = computed(() => {
 })
 // 计算路由表结构
 const appMenuList = computed(() => userStore.appMenuList)
-console.log(appMenuList)
 // 计算侧边栏是否展开
 const isCollapse = computed(() => appStore.isCollapse)
 </script>

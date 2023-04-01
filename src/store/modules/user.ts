@@ -1,10 +1,10 @@
 import { defineStore } from "pinia"
-import dynamicRoutes from "@/router/dynamic"
+import dynamicRoutes from "@/router/dynamic/index"
 import constantRoutes from "@/router/constant"
 import { cloneDeep } from "lodash-es"
 import { useTabsStore } from "./tabs"
 import { IUserInfo } from "@/api/auth/types/login"
-import { filterDynamicRoutes } from "@/utils/menu/permission"
+import { filterDynamicRoutes, handleRedirect } from "@/utils/menu/permission"
 
 interface UserState {
   token: string
@@ -63,7 +63,9 @@ export const useUserStore = defineStore({
     // 生成权限路由
     generatePermissionRoutes() {
       const data = cloneDeep(dynamicRoutes)
-      const res = filterDynamicRoutes(data, this.permissionCodes)
+      let res = filterDynamicRoutes(data, this.permissionCodes)
+      res = handleRedirect(res)
+      console.log("res", res)
       this.setPermissionRoutes(res)
       return res
     },

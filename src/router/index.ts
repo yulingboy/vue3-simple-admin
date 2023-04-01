@@ -8,6 +8,7 @@ import constantRoutes, { notFoundRoute } from "./constant"
 import Layout from "@/layout/index.vue"
 import { useAuthApi } from "@/api/auth"
 import { ElMessage } from "element-plus"
+import "./dynamic/index"
 
 NProgress.configure({
   easing: "ease",
