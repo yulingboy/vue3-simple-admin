@@ -2,7 +2,7 @@
   <el-form ref="loginFormRef" size="large" :model="loginForm" :rules="rules" @keyup.enter="handleLogin(loginFormRef)">
     <!-- 用户名 -->
     <el-form-item prop="username">
-      <el-input v-model="loginForm.username" prefix-icon="el-icon-user" clearable placeholder="请输入用户名">
+      <el-input v-model="loginForm.username" clearable placeholder="请输入用户名">
         <template #prefix>
           <el-icon><User /></el-icon>
         </template>
@@ -10,13 +10,7 @@
     </el-form-item>
     <!-- 密码 -->
     <el-form-item prop="password">
-      <el-input
-        v-model="loginForm.password"
-        prefix-icon="el-icon-lock"
-        clearable
-        show-password
-        placeholder="请输入密码"
-      >
+      <el-input v-model="loginForm.password" clearable show-password placeholder="请输入密码">
         <template #prefix>
           <el-icon><Lock /></el-icon>
         </template>

@@ -31,6 +31,7 @@ specifiers:
   prettier: ^2.8.7
   sass: ^1.60.0
   screenfull: ^6.0.2
+  terser: ^5.16.5
   typescript: ^4.9.5
   unplugin-auto-import: ^0.6.9
   unplugin-vue-components: ^0.17.21
@@ -82,11 +83,12 @@ devDependencies:
   mockjs: 1.1.0
   prettier: 2.8.7
   sass: 1.60.0
+  terser: 5.16.8
   typescript: 4.9.5
   unplugin-auto-import: 0.6.9_ci463c3uxxx4o2tozziejo2u5i
   unplugin-vue-components: 0.17.21_vite@4.2.1+vue@3.2.47
   unplugin-vue-define-options: 1.3.2_vue@3.2.47
-  vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+  vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
   vite-plugin-compression: 0.4.0_vite@4.2.1
   vite-plugin-html: 3.2.0_vite@4.2.1
   vite-plugin-mock: 2.9.6_mockjs@1.1.0+vite@4.2.1
@@ -1008,7 +1010,7 @@ packages:
       '@babel/core': 7.21.3
       '@babel/plugin-transform-typescript': 7.21.3_@babel+core@7.21.3
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.21.3
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
@@ -1021,7 +1023,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
       vue: 3.2.47
     dev: true
 
@@ -4374,7 +4376,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
       webpack-virtual-modules: 0.4.6
     dev: true
 
@@ -4396,7 +4398,7 @@ packages:
         optional: true
     dependencies:
       chokidar: 3.5.3
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
       webpack-virtual-modules: 0.4.6
     dev: true
 
@@ -4466,7 +4468,7 @@ packages:
       chalk: 4.1.2
       debug: 4.3.4
       fs-extra: 10.1.0
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4488,7 +4490,7 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
     dev: true
 
   /vite-plugin-mock/2.9.6_mockjs@1.1.0+vite@4.2.1:
@@ -4508,7 +4510,7 @@ packages:
       fast-glob: 3.2.12
       mockjs: 1.1.0
       path-to-regexp: 6.2.1
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4527,7 +4529,7 @@ packages:
       pathe: 0.2.0
       svg-baker: 1.7.0
       svgo: 2.8.0
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4539,7 +4541,7 @@ packages:
     dependencies:
       '@vue/compiler-sfc': 3.2.47
       magic-string: 0.25.9
-      vite: 4.2.1_hghbulspu73jfdazs4i6yiqype
+      vite: 4.2.1_n2yi4bwpujm2nklbdspbd7ozy4
     dev: true
 
   /vite-svg-loader/4.0.0:
@@ -4549,7 +4551,7 @@ packages:
       svgo: 3.0.2
     dev: true
 
-  /vite/4.2.1_hghbulspu73jfdazs4i6yiqype:
+  /vite/4.2.1_n2yi4bwpujm2nklbdspbd7ozy4:
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4580,6 +4582,7 @@ packages:
       resolve: 1.22.1
       rollup: 3.20.2
       sass: 1.60.0
+      terser: 5.16.8
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

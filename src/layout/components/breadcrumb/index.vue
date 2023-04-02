@@ -58,7 +58,6 @@ const getBreadcrumbList = () => {
   breadcrumbList.value = (findAncestorWithPath(appMenuList.value, activeMenu.value) || [])
     .filter((item: RouteRecordRaw) => item.meta && item.meta.title)
     .filter((item: RouteRecordRaw) => !item.children || item.children.length > 1)
-  console.log("breadcrumbList", breadcrumbList.value)
 }
 // 监听路由变化时触发
 watch(
@@ -76,7 +75,6 @@ watch(
 const router = useRouter()
 const onLinkClick = (item: RouteRecordRaw) => {
   const { path, redirect } = item
-  console.log("redirect", redirect)
   if (redirect) return router.push(redirect as string)
   router.push(path)
 }

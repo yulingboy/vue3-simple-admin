@@ -41,7 +41,6 @@ export default function useHandleLogin(
         try {
           btnLoading.value = true
           const { data } = await useAuthApi.login({ username, password, code })
-          console.log(data)
           userStore.setToken(data.token)
           userStore.setUserInfo(data.userInfo)
           router.push("/")

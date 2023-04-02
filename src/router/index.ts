@@ -1,6 +1,5 @@
-import { createRouter, createWebHashHistory } from "vue-router"
-import NProgress from "nprogress"
-import "nprogress/nprogress.css"
+import { createRouter, createWebHashHistory, createWebHistory } from "vue-router"
+import NProgress from "@/plugins/modules/nprogress"
 import { useUserStore } from "@/store/modules/user"
 import { flatRoutes } from "@/utils/menu/permission"
 import { cloneDeep } from "lodash-es"
@@ -10,16 +9,8 @@ import { useAuthApi } from "@/api/auth"
 import { ElMessage } from "element-plus"
 import "./dynamic/index"
 
-NProgress.configure({
-  easing: "ease",
-  speed: 500, // 递增进度条的速度
-  showSpinner: false, // 是否显示加载ico
-  trickleSpeed: 200, // 自动递增间隔
-  minimum: 0.3 // 初始化时的最小百分比
-})
-
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: import.meta.env.VITE_ROUTER_HISTORY === "hash" ? createWebHashHistory() : createWebHistory(),
   routes: [...constantRoutes]
 })
 

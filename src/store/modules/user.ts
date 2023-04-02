@@ -65,7 +65,6 @@ export const useUserStore = defineStore({
       const data = cloneDeep(dynamicRoutes)
       let res = filterDynamicRoutes(data, this.permissionCodes)
       res = handleRedirect(res)
-      console.log("res", res)
       this.setPermissionRoutes(res)
       return res
     },
