@@ -1,1 +1,0 @@
-import{_ as a,e as s,C as c,H as e,I as n,m as t}from"./index-7e3c488b.js";const d={},r={class:"user-container"},o=[(a=>(e("data-v-a7c0dcc0"),a=a(),n(),a))((()=>t("h2",null,"用户管理",-1)))];const i=a(d,[["render",function(a,e){return s(),c("div",r,o)}],["__scopeId","data-v-a7c0dcc0"]]);export{i as default};
