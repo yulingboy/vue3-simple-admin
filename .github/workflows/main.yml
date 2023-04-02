@@ -28,7 +28,7 @@ jobs:
         run: pnpm install && pnpm build:prod
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.VUE3_SIMPLE_ADMIN }}
           BRANCH: gh-pages
