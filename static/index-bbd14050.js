@@ -1,0 +1,1 @@
+import{d as e,F as t,e as a,C as r,c as s,G as c}from"./index-7e3c488b.js";const d={class:"redirect-container"},n=e({__name:"index",setup(e){const n=s(),i=c();return t((()=>{const{query:e}=i,t=e.redirectPath;delete e.redirectPath,n.replace({path:t,query:{...e}})})),(e,t)=>(a(),r("div",d))}});export{n as default};

@@ -1,0 +1,1 @@
+import{_ as a,e as n,C as o,H as s,I as t,m as r}from"./index-7e3c488b.js";const e={},d={class:"monitor-container"},i=[(a=>(s("data-v-a07bdb88"),a=a(),t(),a))((()=>r("h2",null,"monitor-container",-1)))];const c=a(e,[["render",function(a,s){return n(),o("div",d,i)}],["__scopeId","data-v-a07bdb88"]]);export{c as default};
